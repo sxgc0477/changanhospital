@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+
+{% block title %}Flasky - Page Not Found{% endblock %}
+
+{% block page_content %}
+<div class="page-header">
+    <img src="{{ url_for('static',filename='image/404.png') }}" alt="{{ msg.not_found }}" >
+</div>
+{% endblock %}

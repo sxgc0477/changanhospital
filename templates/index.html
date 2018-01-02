@@ -1,0 +1,108 @@
+{% extends "base.html" %}
+
+{% block head %}
+ {{ super() }}
+{% endblock %}
+
+{% block page_content %}
+<div class="header">
+  <!-- <marquee> <h3 class="label label-danger">系统升级中，敬请等待...</h3></marquee>-->
+</div>
+<main class="main" role="main">
+
+        <div class="container">
+            <fieldset>
+                 <legend>长安医馆介绍</legend>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-8">
+                        <p >长安医馆，长安中医世家，郭浩斌大夫为第三代传人组建。
+                        郭大夫家族善于医治各种疑难杂症，
+                        在消化系统以及呼吸道系统更有自己独到的见解，讲阴阳论病理，对中医诊治各种病症有临床30多年理论与实践相结合的
+                        体系。
+                        </p>
+                        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                        <address>
+                            <strong>长安医馆</strong><br>
+                            西安市，长安区，西部大道，紫薇田园都市B区<br>
+                            <a href="tel://029-85844349">029-85844349</a>
+                        </address>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-3">
+                        照片区域
+                        <div class="photo">
+                            <img src="{{ url_for('static',filename='image/doctor.jpg') }}" alt="郭大夫">
+                        </div>
+
+                    </div>
+                </div>
+            </fieldset>
+        </div>
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-4" name="disease">
+                 <fieldset>
+                    <legend>常规病与药</legend>
+                      <ol>
+                        <li>item1</li>
+                        <li>item2</li>
+                        <li>item3</li>
+                        <li>item4</li>
+                        <li>item5</li>
+                        <li>item6</li>
+                        <li>item7</li>
+                        <li>item8</li>
+                        <li>item9</li>
+                        <li>item10</li>
+                     </ol>
+                </fieldset>
+
+            </div>
+            <div class="col-xs-12 col-sm-4" name="health">
+                <fieldset>
+                    <legend>健康与养生</legend>
+                      <ol>
+                        <li>item1</li>
+                        <li>item2</li>
+                        <li>item3</li>
+                        <li>item4</li>
+                        <li>item5</li>
+                        <li>item6</li>
+                        <li>item7</li>
+                        <li>item8</li>
+                        <li>item9</li>
+                        <li>item10</li>
+                     </ol>
+                </fieldset>
+            </div>
+              <div class="col-xs-12 col-sm-4" name="children">
+                <fieldset>
+                    <legend>快乐成长</legend>
+                      <ol>
+                        <li>item1</li>
+                        <li>item2</li>
+                        <li>item3</li>
+                        <li>item4</li>
+                        <li>item5</li>
+                        <li>item6</li>
+                        <li>item7</li>
+                        <li>item8</li>
+                        <li>item9</li>
+                        <li>item10</li>
+                     </ol>
+                </fieldset>
+            </div>
+        </div>
+    </div>
+
+</main>
+
+<footer class="container-fluid foot-wrap">
+    <p align="center" style="margin-top: 20px;color:#878B91;">
+            Copyright &copy;2018 {{ msg.title }}
+    </p>
+</footer>
+
+{% endblock %}
